@@ -1,17 +1,17 @@
 export const flattenObject = (data: any, prefix?: string, accumulator = {}) => {
   const objectReducer = (acc: object, element: string) => {
-    const key = (prefix) ? `${prefix}.${element}` : element;
+    const key = prefix ? `${prefix}.${element}` : element;
     const value = data[element];
 
     if (value === null) {
-   		return {
+      return {
         ...acc,
         [key]: value,
-      }
+      };
     }
 
     if (typeof value === "object") {
-    	return {
+      return {
         ...acc,
         ...flattenObject(value, key, acc),
       };
@@ -21,9 +21,7 @@ export const flattenObject = (data: any, prefix?: string, accumulator = {}) => {
       ...acc,
       [key]: value,
     };
-  }
+  };
 
   return Object.keys(data).reduce(objectReducer, accumulator);
-}
-
-
+};
