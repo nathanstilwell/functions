@@ -1,5 +1,5 @@
 {
-  "name": "functions",
+  "name": "@nathanstilwell/functions",
   "version": "0.1.0",
   "description": "A collection of utility functions for fun and profit",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "url": "git+https://github.com/nathanstilwell/functions.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nathan Stilwell <nathanstilwell@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/nathanstilwell/functions/issues"
@@ -23,9 +23,17 @@
   "devDependencies": {
     "@cockroachlabs/eslint-config": "^1.0.3",
     "@types/jest": "28.1.6",
+    "auto": "^10.37.4",
     "eslint": "8.21.0",
     "jest": "28.1.3",
     "ts-jest": "28.0.7",
     "typescript": "4.7.4"
+  },
+  "auto": {
+    "plugins": [
+      "npm",
+      "released"
+    ],
+    "onlyPublishWithReleaseLabel": true
   }
 }
