@@ -4,10 +4,11 @@
   "description": "A collection of utility functions for fun and profit",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "test:watch": "jest --watch",
     "build": "tsc --build --verbose",
-    "lint": "eslint --quiet src/**/*.ts"
+    "lint": "eslint --quiet src/**/*.ts",
+    "release": "auto shipit",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "repository": {
     "type": "git",
