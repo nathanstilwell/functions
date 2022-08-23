@@ -20,8 +20,8 @@
     "url": "https://github.com/nathanstilwell/functions/issues"
   },
   "homepage": "https://github.com/nathanstilwell/functions#readme",
-  "dependencies": {
-    "@cockroachlabs/eslint-config": "1.0.3",
+  "devDependencies": {
+    "@cockroachlabs/eslint-config": "^1.0.3",
     "@types/jest": "28.1.6",
     "eslint": "8.21.0",
     "jest": "28.1.3",

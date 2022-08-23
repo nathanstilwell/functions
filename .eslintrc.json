@@ -4,8 +4,6 @@
     "@typescript-eslint/no-explicit-any": "off"
   },
   "globals": {
-    "module": true,
-    "describe": true,
-    "test": true
+    "module": true
   }
 }
