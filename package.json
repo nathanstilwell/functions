@@ -1,6 +1,6 @@
 {
   "name": "@nathanstilwell/functions",
-  "version": "0.1.0",
+  "version": "0.1.1--canary.36f7368.0",
   "description": "A collection of utility functions for fun and profit",
   "main": "index.js",
   "scripts": {
@@ -32,9 +32,18 @@
   },
   "auto": {
     "plugins": [
-      "npm",
+      [
+        "npm",
+        {
+          "setRcToken": false
+        }
+      ],
       "released"
     ],
     "onlyPublishWithReleaseLabel": true
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
