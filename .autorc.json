@@ -1,17 +1,10 @@
 {
   "canary": {
     "target": "pr-body",
-    "message": "string",
     "force": true
   },
   "plugins": [
-    [
-      "npm",
-      {
-        "setRcToken": false
-      }
-    ],
+    "npm",
     "released"
-  ],
-  "onlyPublishWithReleaseLabel": true
+  ]
 }
