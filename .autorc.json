@@ -1,0 +1,10 @@
+{
+  "canary": {
+    "target": "pr-body",
+    "force": true
+  },
+  "plugins": [
+    "npm",
+    "released"
+  ]
+}
