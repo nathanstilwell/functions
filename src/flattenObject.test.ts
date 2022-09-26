@@ -57,4 +57,32 @@ describe("flattenObject", () => {
     const result = flattenObject(testObj);
     expect(result).toEqual(expected);
   });
+
+  test("returns null if object is invalid", () => {
+    expect(flattenObject(undefined)).toBe(null);
+    expect(flattenObject(null)).toBe(null);
+    expect(flattenObject("test")).toBe(null);
+    expect(flattenObject(Infinity)).toBe(null);
+  });
+
+  test("returns object if already flat or empty", () => {
+    const testObj = {
+      foo: 1,
+      bar: 2,
+    };
+
+    expect(flattenObject(testObj)).toEqual(testObj);
+    expect(flattenObject({})).toEqual({});
+  });
+
+  test("flattens arrays to objects", () => {
+    const test = [
+      [1, 2, 3],
+      [[4], [5], [6]],
+    ];
+
+    const expected = {"0.0": 1, "0.1": 2, "0.2": 3, "1.0.0": 4, "1.1.0": 5, "1.2.0": 6};
+
+    expect(flattenObject(test)).toEqual(expected);
+  });
 });
