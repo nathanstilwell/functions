@@ -23,5 +23,9 @@ export const flattenObject = (data: any, prefix?: string, accumulator = {}) => {
     };
   };
 
+  if (typeof data !== "object" || data === null) {
+    return null;
+  }
+
   return Object.keys(data).reduce(objectReducer, accumulator);
 };
