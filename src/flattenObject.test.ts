@@ -75,4 +75,14 @@ describe("flattenObject", () => {
     expect(flattenObject({})).toEqual({});
   });
 
+  test("flattens arrays to objects", () => {
+    const test = [
+      [1, 2, 3],
+      [[4], [5], [6]],
+    ];
+
+    const expected = {"0.0": 1, "0.1": 2, "0.2": 3, "1.0.0": 4, "1.1.0": 5, "1.2.0": 6};
+
+    expect(flattenObject(test)).toEqual(expected);
+  });
 });
