@@ -10,7 +10,7 @@
     "build": "tsc --build --verbose",
     "clean": "rm -rf  ./dist/*",
     "lint": "eslint --quiet src/**/*.ts",
-    "release": "auto shipit -vv",
+    "release": "auto shipit",
     "test": "jest",
     "test:watch": "jest --watch"
   },
