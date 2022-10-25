@@ -12,5 +12,6 @@ describe("is function", () => {
     expect(is(undefined, "undefined")).toBe(true);
     expect(is(false, "boolean")).toBe(true);
     expect(is(new Boolean(true), "object")).toBe(true);
+    expect(is(new Number(3), "object")).toBe(true);
   });
 });
