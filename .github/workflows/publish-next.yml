@@ -2,7 +2,7 @@ name: Publish Next from master
 on:
   push:
     branches:
-      - master
+      - main
     paths:
       - 'src/**/*.ts?'
       - 'yarn.lock'
