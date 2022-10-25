@@ -21,9 +21,10 @@ jobs:
       env:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-    - name: Get base branch name
+    - name: Get Branch name
+      shell: bash
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
       id: branch-name
-      uses: tj-actions/branch-names@v6
 
     - name: Build
       run: |
@@ -33,4 +34,4 @@ jobs:
     - name: Publish Dry Run
       run: |
         echo "yarn version --minor"
-        echo "yarn publish --access public --tag ${{ steps.branch-name.outputs.base_ref_branch }}"
+        echo "yarn publish --access public --tag ${{ steps.branch-name.outputs.branch }}"
