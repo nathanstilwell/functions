@@ -10,5 +10,6 @@ describe("is function", () => {
     expect(is(Infinity, "number")).toBe(true);
     expect(is(Symbol(), "symbol")).toBe(true);
     expect(is(undefined, "undefined")).toBe(true);
+    expect(is(false, "boolean")).toBe(true);
   });
 });
