@@ -1,6 +1,10 @@
 name: Release
 
-on: [push]
+on:
+  push:
+    paths:
+      - 'src/**/*.ts?'
+      - 'yarn.lock'
 
 jobs:
   release:
