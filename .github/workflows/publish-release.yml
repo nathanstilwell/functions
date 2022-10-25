@@ -1,5 +1,11 @@
 name: Publish Release Version from Branch
-on: [push]
+on:
+  push:
+    branches:
+      - 'release-*'
+    paths:
+      - 'src/**/*.ts?'
+      - 'yarn.lock'
 jobs:
   publish_release_test:
     runs-on: ubuntu-latest
