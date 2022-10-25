@@ -23,7 +23,7 @@ jobs:
 
     - name: Get Branch name
       shell: bash
-      run: echo "branch=${GITHUB_REF#refs/heads/}" >> $GITHUB_OUTPUT
+      run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
       id: branch-name
 
     - name: Build
