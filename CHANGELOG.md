@@ -1,3 +1,19 @@
+# v0.3.0 (Tue Oct 25 2022)
+
+#### 🚀 Enhancement
+
+- add a little is() function [#6](https://github.com/nathanstilwell/functions/pull/6) ([@nathanstilwell](https://github.com/nathanstilwell))
+
+#### 🏠 Internal
+
+- Testing out some theoretical publishing workflows [#5](https://github.com/nathanstilwell/functions/pull/5) ([@nathanstilwell](https://github.com/nathanstilwell))
+
+#### Authors: 1
+
+- Nathan Stilwell ([@nathanstilwell](https://github.com/nathanstilwell))
+
+---
+
 # v0.2.1 (Mon Sep 26 2022)
 
 #### 🐛 Bug Fix
