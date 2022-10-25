@@ -8,4 +8,9 @@ describe("isJson function", () => {
 
     expect(isJson(json)).toBe(true);
   });
+
+  test("can tell what isn't JSON", () => {
+    const notJSON = `{ foo: "bar"; }`;
+    expect(isJson(notJSON)).toBe(false);
+  });
 });
