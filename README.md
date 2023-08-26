@@ -1,8 +1,6 @@
 # functions
 A collection of utility functions for fun and profit
 
-`import {`
-
-  [`flattenObject`](docs/flattenObject.md)
-
-`} from "@nathanstilwell/functions";`
++ [`flattenObject`](docs/flattenObject.md)  
++ [`pipe`](docs/pipe.md)  
++ [`is`](docs/is.md)  
