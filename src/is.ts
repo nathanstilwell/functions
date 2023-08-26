@@ -1,1 +1,1 @@
-export const is = ( obj, type ) => typeof obj === type;
+export const is = (obj, type) => typeof obj === type;
