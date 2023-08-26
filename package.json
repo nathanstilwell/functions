@@ -7,7 +7,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc --build --verbose",
+    "build": "tsc --build",
     "clean": "rm -rf  ./dist/*",
     "lint": "eslint --quiet src/**/*.ts",
     "release": "auto shipit",
@@ -26,12 +26,14 @@
   },
   "homepage": "https://github.com/nathanstilwell/functions#readme",
   "devDependencies": {
-    "@cockroachlabs/eslint-config": "^1.0.3",
-    "@types/jest": "28.1.6",
+    "@jest/globals": "^29.6.4",
+    "@types/jest": "^29.5.4",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
     "auto": "^10.37.4",
-    "eslint": "8.21.0",
+    "eslint": "^8.48.0",
     "jest": "28.1.3",
     "ts-jest": "28.0.7",
-    "typescript": "4.7.4"
+    "typescript": "4.9.5"
   }
 }

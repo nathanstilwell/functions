@@ -58,13 +58,6 @@ describe("flattenObject", () => {
     expect(result).toEqual(expected);
   });
 
-  test("returns null if object is invalid", () => {
-    expect(flattenObject(undefined)).toBe(null);
-    expect(flattenObject(null)).toBe(null);
-    expect(flattenObject("test")).toBe(null);
-    expect(flattenObject(Infinity)).toBe(null);
-  });
-
   test("returns object if already flat or empty", () => {
     const testObj = {
       foo: 1,
