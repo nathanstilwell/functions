@@ -1,6 +1,7 @@
 # functions
 A collection of utility functions for fun and profit
 
-+ [`flattenObject`](docs/flattenObject.md)  
-+ [`pipe`](docs/pipe.md)  
-+ [`is`](docs/is.md)  
++ [`flattenObject`](docs/flattenObject.md)
++ [`pipe`](docs/pipe.md)
++ [`is`](docs/is.md)
++ [`toNumeral` / `fromNumeral`](docs/numerals.md)
