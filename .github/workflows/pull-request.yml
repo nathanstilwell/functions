@@ -1,13 +1,13 @@
-name: Publish Next from master
+name: Pull request to main
 on:
-  push:
+  pull_request:
     branches:
       - main
     paths:
       - 'src/**/*.ts?'
       - 'yarn.lock'
 jobs:
-  publish_next_test:
+  pull_request_checks:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Code
@@ -16,7 +16,7 @@ jobs:
     - name: Setup NodeJS
       uses: actions/setup-node@v3
       with:
-        node-version: 16
+        node-version: 18
         cache: 'yarn'
       env:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
@@ -26,7 +26,5 @@ jobs:
         yarn install --frozen-lockfile
         yarn build
 
-    - name: Publish Dry Run
-      run: |
-        echo "yarn version --prerelease --preid prerelease"
-        echo "yarn publish --access public --tag next"
+    - name: Test
+      run: yarn run test
