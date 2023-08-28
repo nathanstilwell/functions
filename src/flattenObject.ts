@@ -1,4 +1,8 @@
-export const flattenObject = (data: Record<string, unknown> | Array<unknown>, prefix?: string, accumulator = {}) => {
+export const flattenObject = (
+  data: Record<string, unknown> | Array<unknown>,
+  prefix?: string,
+  accumulator = {},
+) => {
   const objectReducer = (acc: object, element: string) => {
     const key = prefix ? `${prefix}.${element}` : element;
     const value = data[element];
