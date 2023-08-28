@@ -1,11 +1,11 @@
 # flattenObject
 
-**`flattenObject (data: any, prefix?: string, accumulator = {})`**
+**`flattenObject (data: Record<string, unknown> | Array<unknown>, prefix?: string, accumulator = {})`**
 
 `flattenObject` takes an object with nested properties and return an object with properties only a single level deep. The returned object will have property keys equal to the path of the nested values.
 
 **Arguments**
-**`data: any`** - An Object
+**`data: Record<string, unknown> | Array<unknown>`** - An Object or Array
 **`prefix?: string`** - a string to prefix the properties of the returned Object.
 **`accumulator?: Object`** - an Object to assign the data object too
 

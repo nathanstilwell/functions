@@ -1,9 +1,0 @@
-{
-  "extends": "@cockroachlabs/eslint-config",
-  "rules": {
-    "@typescript-eslint/no-explicit-any": "off"
-  },
-  "globals": {
-    "module": true
-  }
-}
